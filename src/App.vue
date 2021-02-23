@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <LightsOutGrid />
+    <LightsOutCell :isOn="true" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LightsOutGrid from "./components/LightsOutGrid.vue";
+import LightsOutCell from "./components/LightsOutCell.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    LightsOutGrid,
+    LightsOutCell,
+  },
+};
 </script>
 
 <style>
